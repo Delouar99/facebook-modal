@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* start style csss */
+
+.banner{
+    background-image: radial-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(./pexels-photo-258160.webp);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-content{
+    width: 500px;
+    height: auto;
+    text-align: center;
+}
+
+.banner .banner-content h1{
+    color: white;
+    font-size: 40px;
+}
+
+.banner .banner-content p{
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner .banner-content a{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+
+/* modal css statt ...................................................*/
+
+
+.haq-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 250, 250, .5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transform: translateY(-200px);
+    transition: all .3s ease-in-out;
+   
+    opacity: 0;
+    pointer-events: none;
+}
+.haq-modal.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0px);
+}
+.haq-modal .modal-content{
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+
+.haq-modal .modal-content .modal-top{
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.haq-modal .modal-content  .modal-top  .close{
+ border: none;
+font-size: 41px;
+cursor: pointer;
+background-color: transparent;
+}
+
+.haq-modal .modal-content .modal-body{
+    margin-left: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    
+}
+.haq-modal .modal-content .modal-foter{
+    border-top: 1px solid #ddd;
+    margin-left: 13px;
+
+}
+
+
+/* custom alert css................................*/
+
+.haq-alert{
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 250, 250, .6);
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+
+.haq-alert .alert-container{
+    width: 450px;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+
+.haq-alert .alert-container .alert-header{
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.haq-alert .alert-container .alert-header .close{
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+
+
+}
+
+.haq-alert .alert-container .alert-body{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.haq-alert .alert-container .alert-body a{
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.haq-alert .alert-container .alert-body .btns{
+    text-align: right;
+}
+
+.haq-alert .alert-container .alert-body a:nth-child(1){
+    color: blue;
+}
+
+.haq-alert .alert-container .alert-body a:nth-child(2){
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
